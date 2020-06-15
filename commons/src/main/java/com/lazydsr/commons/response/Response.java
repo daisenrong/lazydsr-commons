@@ -2,10 +2,13 @@ package com.lazydsr.commons.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.lazydsr.commons.request.PageInfo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+
+import java.io.Serializable;
 
 /**
  * @author daisenrong
@@ -16,7 +19,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @ToString
-public class Response<T> {
+public class Response<T> implements Serializable {
     private Integer code;
     private String message;
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -24,13 +27,4 @@ public class Response<T> {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private PageInfo pageInfo;
 
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @ToString
-    public static class PageInfo {
-        private Integer pageSize;
-        private Integer pageNum;
-        private Integer total;
-    }
 }

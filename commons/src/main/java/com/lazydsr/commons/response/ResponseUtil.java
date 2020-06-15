@@ -1,5 +1,7 @@
 package com.lazydsr.commons.response;
 
+import com.lazydsr.commons.request.PageInfo;
+
 /**
  * @author daisenrong
  * @since 2020/6/13 10:47 下午
@@ -13,7 +15,7 @@ public class ResponseUtil {
         return success(data, null);
     }
 
-    public static <T> Response<T> success(T data, Response.PageInfo pageInfo) {
+    public static <T> Response<T> success(T data, PageInfo pageInfo) {
         return getResponse(0, "success", data, pageInfo);
     }
 
@@ -33,7 +35,7 @@ public class ResponseUtil {
         return getResponse(code, message, data, null);
     }
 
-    public static <T> Response<T> getResponse(Integer code, String message, T data, Response.PageInfo pageInfo) {
+    public static <T> Response<T> getResponse(Integer code, String message, T data, PageInfo pageInfo) {
         return new Response<T>(code, message, data, pageInfo);
     }
 }
