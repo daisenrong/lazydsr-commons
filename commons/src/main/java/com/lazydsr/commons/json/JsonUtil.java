@@ -61,6 +61,7 @@ public class JsonUtil {
      *
      * @param json json 字符串
      * @param type java 对象的类型
+     * @param jsonAdapter jsonAdapter
      * @param <T> 输出 java 对象的范性
      * @return java 对象
      */
@@ -85,6 +86,7 @@ public class JsonUtil {
      *
      * @param json json 字符串
      * @param type java 对象的类型
+     * @param jsonAdapter jsonAdapter
      * @param <T> 输出 java 对象的范性
      * @return java 对象
      */
