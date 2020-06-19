@@ -7,7 +7,7 @@
     <groupId>com.lazydsr.commons</groupId>
     <artifactId>lazydsr-commons</artifactId>
     <packaging>pom</packaging>
-    <version>3.0.0</version>
+    <version>2.0.2</version>
     <modules>
         <module>commons</module>
     </modules>
