@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lazydsr.commons</groupId>
-    <artifactId>lazydsr-commons</artifactId>
+    <artifactId>commons</artifactId>
     <packaging>jar</packaging>
     <version>2.0.3</version>
 
-    <name>lazydsr-commons</name>
-    <description>lazydsr-commons</description>
+    <name>commons</name>
+    <description>commons</description>
     <url>https://lazydsr.com</url>
     <licenses>
         <license>
